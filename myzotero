@@ -1,0 +1,7 @@
+#!/bin/bash -e
+chars=$(curl -s 'http://127.0.0.1:23119/better-bibtex/cayw?format=pandoc&brackets=1')
+echo -n $chars | xclip -selection clipboard
+sleep 0.1
+# xdotool type  "$chars"
+xdotool key ctrl+v
+copyq remove
