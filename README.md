@@ -14,7 +14,7 @@ UCAS课程评价脚本，基于selenium
 
 需要工具selenium，chromdriver
 
-需要使用的话，记得修改里面的用户名，密码，课程网址
+使用的话，记得修改里面的用户名，密码，课程网址
 
 win系统记得修改路径
 
@@ -26,7 +26,7 @@ win系统记得修改路径
 
 简单的script，需要xdotool和xclip，zotero以及better latex插件，可以实现在任意的文本器内引用文献
 
-copyq remove 可以去掉，这个删除这个剪贴板管理器最上面的记录的
+copyq remove那条可以去掉
 
 ## one_img
 
@@ -39,3 +39,16 @@ tkinter的小程序
 读取剪贴板，并删除空格或者换行。
 
 也可以转换半角全角字符。
+
+## my_firefoxext
+
+firefox小插件
+
+- bilibili搜索引擎插件
+
+## myzotero_tran
+
+对zotero写的小translators
+
+- bgm.tv的番剧内容.
+- ~~dlstite~~
