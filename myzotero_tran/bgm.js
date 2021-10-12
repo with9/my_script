@@ -9,7 +9,7 @@
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2021-08-02 03:06:44"
+	"lastUpdated": "2021-10-12 12:56:10"
 }
 
 /*
@@ -39,8 +39,11 @@
 function detectWeb(doc, url) {
 	// TODO: adjust the logic here
 	var a=doc.evaluate('//a[@class="focus chl anime"]', doc).iterateNext();
+	var b=doc.evaluate('//a[@class="focus chl"]', doc).iterateNext();
 	if (a != null) {
 		return "film";
+	}else if (b.href=="https://bgm.tv/book"){
+		return "book";
 	}
 	return false;
 }
@@ -75,6 +78,7 @@ function doWeb(doc, url) {
 }
 
 function scrape(doc, url) {
+	if (detectWeb(doc,url)=="film"){
 	var newItem = new Zotero.Item("film");
 	var b =doc.getElementById('infobox').getElementsByTagName('li');
 	var summary=doc.getElementById('subject_summary');
@@ -144,6 +148,82 @@ function scrape(doc, url) {
 	snapshot: true
 	}];
 	newItem.complete();
+	}else if (detectWeb(doc,url)=="book"){
+	var newItem = new Zotero.Item("book");
+	var b =doc.getElementById('infobox').getElementsByTagName('li');
+	var summary=doc.getElementById('subject_summary');
+	var tags=doc.getElementsByClassName('subject_tag_section')[0].getElementsByTagName('a');
+	var notes='<h2>infobox</h2>';
+	notes=notes.concat(doc.getElementById('infobox').innerHTML);
+	for(var i=0;i<b.length;i++){
+	//     console.log(b[i]);
+		if(b[i].innerText.indexOf('原作') != -1){
+			newItem.creators.push({
+			lastName: b[i].innerText.split(':')[1],
+			creatorType: "authorr",
+			fieldMode: 1
+		});
+		}
+		else if(b[i].innerText.indexOf('作画') != -1){
+			newItem.creators.push({
+			lastName: b[i].innerText.split(':')[1],
+			creatorType: "author",
+			fieldMode: 2
+		});
+		}
+		else if(b[i].innerText.indexOf('放送开始') != -1){
+			newItem.date=ZU.strToISO(b[i].innerText.split(':')[1]);
+			
+		}
+		else if(b[i].innerText.indexOf('发售日') != -1){
+			newItem.date=ZU.strToISO(b[i].innerText.split(':')[1]);
+			
+		}
+		else if(b[i].innerText.indexOf('上映年度') != -1){
+			newItem.date=ZU.strToISO(b[i].innerText.split(':')[1]);
+			
+		}
+		else if(b[i].innerText.indexOf('开始') != -1){
+			newItem.date=ZU.strToISO(b[i].innerText.split(':')[1]);
+			
+		}
+		else if(b[i].innerText.indexOf('话数') != -1){
+			newItem.numberOfVolumes=Number(b[i].innerText.split(':')[1]);
+		}
+		else if(b[i].innerText.indexOf('中文名') != -1){
+			var title=b[i].innerText.split(':')[1];
+		}
+		else if(b[i].innerText.indexOf('出版社') != -1){
+			newItem.rights=b[i].innerText.split(':')[1];
+			newItem.publisher=b[i].innerText.split(':')[1];
+		}
+	}
+	if(summary != null){
+		newItem.abstractNote=summary.innerText;
+	}
+	if(tags != null){
+		for(i of tags){
+			t_name=i.innerText.split(' ')[0];
+			newItem.tags.push({tag: t_name});
+		}
+	}
+	if(title == null){
+		title=doc.title.split('|')[0];
+		
+	}
+	newItem.tags.push({tag: 'bgm'})
+	newItem.title=title;
+	newItem.notes=notes;
+	newItem.libraryCatalog='二次元书籍';
+	newItem.url=url;
+	newItem.attachments = [{
+	url: url,
+	title: title,
+	mimeType: "text/html",
+	snapshot: true
+	}];
+	newItem.complete();	
+	}
 }
 
 
