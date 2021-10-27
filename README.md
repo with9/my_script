@@ -50,5 +50,6 @@ firefox小插件
 
 对zotero写的小translators
 
+- dpaper.js:中科院文献情报中心学位论文
 - bgm.tv的番剧内容.
 - ~~dlstite~~
