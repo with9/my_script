@@ -53,3 +53,7 @@ firefox小插件
 - dpaper.js:中科院文献情报中心学位论文
 - bgm.tv的番剧内容.
 - ~~dlstite~~
+
+## tampermonkey
+
+- 163collect.js:生成几个小按钮来一键丢到指定收藏夹.
