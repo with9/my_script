@@ -40,6 +40,10 @@ tkinter的小程序
 
 也可以转换半角全角字符。
 
+## delNshell.py
+
+简单的读取剪贴板的小程序,删除空格或者换行,并进行翻译
+
 ## my_firefoxext
 
 firefox小插件
