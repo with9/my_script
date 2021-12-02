@@ -61,3 +61,4 @@ firefox小插件
 ## tampermonkey
 
 - 163collect.js:生成几个小按钮来一键丢到指定收藏夹.
+- bilibli快速收藏.user.js:和网易云的这个快速收藏差不多功能的脚本.
