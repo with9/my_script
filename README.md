@@ -30,7 +30,7 @@ copyq remove那条可以去掉
 
 ## one_img
 
-从wallpaper heaven上随机下载一个图片并设置为i3wm的桌面。
+从wallpaper heaven上随机下载一个图片并设置为i3wm的桌面,支持本地随机图片,上一张下一张等操作
 
 ## del_n
 
