@@ -60,7 +60,7 @@
     //绑定按键点击功能
     button1.onclick = async function (){
         document.getElementsByClassName('collect on')[0].click()
-        await sleep(300);
+        await sleep(800);
         var ind=get_index('music');
         console.log(ind)
         var check=document.getElementsByClassName('group-list')[0].getElementsByTagName('input')[ind]
@@ -78,7 +78,7 @@
 
     button2.onclick = async function (){
         document.getElementsByClassName('collect on')[0].click()
-        await sleep(300);
+        await sleep(800);
         var ind=get_index('study');
         console.log(ind)
         var check=document.getElementsByClassName('group-list')[0].getElementsByTagName('input')[ind]
@@ -94,7 +94,7 @@
     }
     button3.onclick = async function (){
         document.getElementsByClassName('collect on')[0].click()
-        await sleep(300);
+        await sleep(800);
         var ind=get_index('best');
         console.log(ind)
         var check=document.getElementsByClassName('group-list')[0].getElementsByTagName('input')[ind]
@@ -109,7 +109,7 @@
 
     }
 
-    let x = document.getElementsByClassName("nav-link")[0]
+    let x = document.getElementsByClassName("video-data")[0]
     //在浏览器控制台可以查看所有函数，ctrl+shift+I 调出控制台，在Console窗口进行实验测试
     x.appendChild(button1);
     x.appendChild(button2);
