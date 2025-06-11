@@ -1,17 +1,17 @@
 {
   "ver":1.0,
   "se":{
-    "26":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/toki/act_pon_62.mp3"},
-    "27":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_kan_0.mp3"},
-    "25":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_pon_0.mp3"},
-    "28":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/toki/act_kan_63.mp3"},
-    "29":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_chi_0.mp3"},
-    "30":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/toki/act_chi_62.mp3"},
-    "31":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_rich_0.mp3"},
+    "25":{"url":"https://mahjongsoul.club/sites/default/files/act_pon_43.mp3"},
+    "26":{"url":"https://mahjongsoul.club/sites/default/files/act_pon_62.mp3"},
+    "27":{"url":"https://mahjongsoul.club/sites/default/files/act_kan_43.mp3"},
+    "28":{"url":"https://mahjongsoul.club/sites/default/files/act_kan_63.mp3"},
+    "29":{"url":"https://mahjongsoul.club/sites/default/files/act_chi_43.mp3"},
+    "30":{"url":"https://mahjongsoul.club/sites/default/files/act_chi_62.mp3"},
+    "31":{"url":"https://mahjongsoul.club/sites/default/files/act_rich_8.mp3"},
     "32":{"url":"https://mahjongsoul.club/sites/default/files/act_rich_62.mp3"},
-    "33":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_ron_0.mp3"},
-    "34":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/toki/act_ron_62.mp3"},
-    "35":{"url":"https://raw.githubusercontent.com/Mahjong-Toki/tenhou_DIY/main/saki/act_tumo_15.mp3"},
+    "33":{"url":"https://mahjongsoul.club/sites/default/files/act_ron_52.mp3"},
+    "34":{"url":"https://mahjongsoul.club/sites/default/files/act_ron_62.mp3"},
+    "35":{"url":"https://mahjongsoul.club/sites/default/files/act_tumo_60.mp3"},
     "36":{"url":"https://mahjongsoul.club/sites/default/files/act_tumo_62.mp3"}
   }
 }
