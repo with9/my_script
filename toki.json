@@ -1,17 +1,17 @@
 {
   "ver":1.0,
   "se":{
-    "25":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_pon_43.mp3"},
-    "26":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_pon_62.mp3"},
-    "27":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_kan_43.mp3"},
-    "28":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_kan_63.mp3"},
-    "29":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_chi_43.mp3"},
-    "30":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_chi_62.mp3"},
-    "31":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_rich_8.mp3"},
-    "32":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_rich_62.mp3"},
-    "33":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_ron_52.mp3"},
-    "34":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_ron_62.mp3"},
-    "35":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_tumo_60.mp3"},
-    "36":{"url":"https://raw.githubusercontent.com/with9/my_script/mp3_tenhou/act_tumo_62.mp3"}
+    "25":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_pon_43.mp3"},
+    "26":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_pon_62.mp3"},
+    "27":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_kan_43.mp3"},
+    "28":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_kan_63.mp3"},
+    "29":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_chi_43.mp3"},
+    "30":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_chi_62.mp3"},
+    "31":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_rich_8.mp3"},
+    "32":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_rich_62.mp3"},
+    "33":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_ron_52.mp3"},
+    "34":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_ron_62.mp3"},
+    "35":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_tumo_60.mp3"},
+    "36":{"url":"https://raw.githubusercontent.com/with9/my_script/main/mp3_tenhou/act_tumo_62.mp3"}
   }
 }
